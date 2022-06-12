@@ -5,7 +5,7 @@ function copiartexto() {
     document.execCommand('copy');
 }
 
-async function colartexto() {
+function colartexto() {
     navigator.clipboard.readText().then(
         clipText => document.getElementById("text-texto").innerText = clipText);
 }
@@ -16,7 +16,7 @@ function copiar() {
     document.execCommand('copy');
 }
 
-async function colar() {
+function colar() {
     navigator.clipboard.readText().then(
         clipText => document.getElementById("text-codigo").innerText = clipText);
 }

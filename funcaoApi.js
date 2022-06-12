@@ -26,8 +26,8 @@ function codificar() {
         }
     }
     catch (erro) {
-        alert(erro)
-        console.log(erro)
+        alert("Erro" + erro)
+        window.location.reload()
     }
 
 }
@@ -69,8 +69,8 @@ async function decodificar() {
                 .then(response => response.json())
                 .then(dados => exibir_texto(dados));
         } catch (erro) {
-            alert(erro)
-            console.log(erro)
+            alert("Erro" + erro)
+            window.location.reload()
         }
     }
 }
